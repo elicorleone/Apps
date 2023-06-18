@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discover Bulgaria</title>
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!---google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <!----header section starts---->
+    <section class="sub-header2">
+      <nav>
+        <a href="index.html"><img src="images/BG_logo.jpg" alt="logo" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="activities.html">ACTIVITIES</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Blog</h1>
+    </section>
+
+    <!-----End of header section------>
+
+    <!-----Blog content section starts---->
+    <section class="news-items">
+      <div class="row3">
+        <div class="news-col">
+          <p>
+            <small class="text-muted">10.2022 17:42</small>
+          </p>
+          <h4>
+            <a
+              href="https://www.borovets-bg.com/en/blog-article/   borovets-beautiful-discoveries"
+              >Borovets - One of Bulgaria's most beautiful discoveries</a
+            >
+          </h4>
+          <p>
+            Located in the heart of the Rila mountains, an hour's drive from
+            Sofia's culture and history, Borovets is one of Bulgaria's most
+            beautiful discoveries.
+          </p>
+        </div>
+      </div>
+
+      <hr />
+      <div class="row3">
+        <div class="news-col">
+          <p>
+            <small class="text-muted">07.02.2022 17:42</small>
+          </p>
+          <h4>
+            <a
+              href="https://www.excedotravel.com/bulgaria-tours/8-days-in-the-wild-eastern-rhodope-mountains/"
+              >8-day rural Tour in the Wild Eastern Rhodope Mountains</a
+            >
+          </h4>
+          <p>
+            Marvel at wild and authentic landscapes, a rarely seen richness of
+            wildlife, flowers, butterflies and the highest raptor diversity in
+            Europe!
+          </p>
+        </div>
+      </div>
+      <hr />
+      <div class="row3">
+        <div class="news-col">
+          <p>
+            <small class="text-muted">01.02.2022 17:42</small>
+          </p>
+          <h4>
+            <a
+              href="https://www.excedotravel.com/bulgaria-tours/koprivshtitsa-tour-for-hikers-day-trip-from-sofia/"
+              >Day Trip from Sofia - Koprivshtitsa Sightseeing and Hiking
+              Tour</a
+            >
+          </h4>
+          <p>
+            If you are visiting Bulgaria for a couple of days and wish to make
+            the most of your stay, our ‘Koprivshtitsa Sightseeing and Hiking
+            Tour’ is a great start.
+          </p>
+        </div>
+      </div>
+      <hr />
+      <div class="row3">
+        <div class="news-col">
+          <p>
+            <small class="text-muted">27.09.2021 17:42</small>
+          </p>
+          <h4>
+            <a
+              href="https://www.excedotravel.com/is-it-fun-to-visit-sofia-in-the-winter/"
+              >Is it fun to visit Sofia, Bulgaria in the winter?</a
+            >
+          </h4>
+          <p>
+            In Bulgaria, we enjoy the best of all four seasons, including lots
+            of snow and cold temperatures in the winter months.
+          </p>
+        </div>
+      </div>
+      <hr />
+      <div class="row3">
+        <div class="news-col">
+          <p>
+            <small class="text-muted">01.02.2022 17:42</small>
+          </p>
+          <h4>
+            <a
+              href="https://www.excedotravel.com/where-to-see-wildlife-in-bulgaria/"
+              >Where to See Wildlife in Bulgaria.</a
+            >
+          </h4>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed hic
+            perspiciatis quo, quam quis esse quae sint enim corrupti est
+            repudiandae dolores velit facilis harum labore repellat earum
+            dolorem fuga?
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!----End of blog content section----->
+
+    <!----Footer section starts----->
+
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        Our love for nature and outdoor sports and our reverence for Bulgaria’s
+        rich culture and centuries-old history<br />
+        have inspired us to take a distinct approach.<br />
+        With us, you will enjoy your favorite outdoor activities or try
+        something new entirely!
+      </p>
+      <div class="icons1">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+      <p>All rights reserved 2022</p>
+    </section>
+
+    <!-----End of footer section---->
+
+    <!------Javascript for Toggle Menu----->
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+
+    <!---end of javascript for toogle menu-->
+  </body>
+</html>

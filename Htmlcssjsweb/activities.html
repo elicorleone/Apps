@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discover Bulgaria</title>
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!---google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!----header section starts---->
+    <section class="sub-header1">
+      <nav>
+        <a href="index.html"
+          ><img src="images/BG_logo.jpg" alt="Discover Bulgaria logo"
+        /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="activities.html">ACTIVITIES</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Activities</h1>
+    </section>
+
+    <!-----End of header section------>
+
+    <!-----Activities content section starts---->
+    <section class="activities">
+      <h1>Acivities for everyone</h1>
+      <p>You can find all kind of activities<br />for all kind of tastes</p>
+      <div class="row">
+        <div class="activities-col">
+          <img src="images/horseriding.jpg" alt="People riding horse" />
+          <div class="layer">
+            <h3>HORSE RIDING</h3>
+          </div>
+        </div>
+
+        <div class="activities-col">
+          <img src="images/ski.jpeg" alt="People skiing" />
+          <div class="layer">
+            <h3>SKI</h3>
+          </div>
+        </div>
+        <div class="activities-col">
+          <img
+            src="images/Th10_prsmall_108.jpg"
+            alt="brown bear in the mountain"
+          />
+          <div class="layer">
+            <h3>WILD TRIPS</h3>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="activities-col">
+          <img src="images/cycling.jpg" alt="People cyclinkg in the mountain" />
+          <div class="layer">
+            <h3>CYCLING</h3>
+          </div>
+        </div>
+        <div class="activities-col">
+          <img src="images/hiking.jpg" alt="People hiking in the mountain" />
+          <div class="layer">
+            <h3>HIKING</h3>
+          </div>
+        </div>
+        <div class="activities-col">
+          <img src="images/rosefestival.jpg" alt="Water pod with rose petals" />
+          <div class="layer">
+            <h3>ROSEFESTIVAL</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="activity-info">
+      <div class="row">
+        <div class="activityinfo-col">
+          <h1>For those who like the nature and the adventures</h1>
+          <p>
+            Exploring every corner of Bulgaria is a big pleasure for us and we
+            are always ready for taking new roads Lorem ipsum dolor sit amet
+            consectetur, adipisicing elit. Nostrum Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Quidem quo
+          </p>
+          <a href="" class="hero-btn red-btn">EXPLORE MORE</a>
+        </div>
+        <div class="activityinfo-col">
+          <img src="images/rila.jpg" alt="Rila Mountain" />
+        </div>
+      </div>
+    </section>
+
+    <!-----End of activities content section----->
+
+    <!------Start video section----->
+
+    <div id="banner">
+      <div class="btn-pause" id="btnPause">
+        <i class="fa fa-pause-circle-o"></i>
+      </div>
+      <div class="btn-audio" id="btnAudio">
+        <i class="fa fa-volume-up"></i>
+      </div>
+
+      <video controls loop muted autoplay preload="auto" id="video">
+        <source src="video/video.mp4" />
+      </video>
+    </div>
+    <!--------end video section-->
+    
+    <!----Footer section starts----->
+
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        Our love for nature and outdoor sports and our reverence for Bulgaria’s
+        rich culture and centuries-old history<br />
+        have inspired us to take a distinct approach.<br />
+        With us, you will enjoy your favorite outdoor activities or try
+        something new entirely!
+      </p>
+      <div class="icons1">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+      <p>All rights reserved 2022</p>
+    </section>
+
+    <!-----End of footer section---->
+    <!--------Javascript for Video----->
+    <script src="js/object-fit-videos.js"></script>
+    <script src="js/app.js"></script>
+
+    <!-------end Javascript video------>
+
+    <!------Javascript for Toggle Menu----->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+    <!---end of javascript for toogle menu-->
+  </body>
+</html>
